@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício 1 — Módulo 01</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            padding: 2rem;
+            background-color: #f5f5f5;
+        }
+        .resultado {
+            background: white;
+            padding: 1.5rem;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+            font-size: 1.1rem;
+        }
+    </style>
+</head>
+<body>
+    <h1>Exercício 1 — Apresentação</h1>
+    <div class="resultado" id="saida"></div>
+
+    <script>
+        const nome = "Seu Nome Completo";
+        const cidade = "Assis Chateaubriand — PR";
+        const anoNascimento = 2000; // altere para o seu ano
+
+        const anoAtual = new Date().getFullYear();
+        const idade = anoAtual - anoNascimento;
+
+        const mensagem = `Olá! Meu nome é ${nome}, moro em ${cidade} e tenho ${idade} anos de idade.`;
+        
+        console.log("=== Resultado do Exercício 1 ===");
+        console.log(mensagem);
+
+        document.getElementById("saida").textContent = mensagem;
+    </script>
+</body>
+</html>
